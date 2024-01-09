@@ -368,20 +368,20 @@ button {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+.logosection {
+  height: 50px;
+  background: #000;
+}
 .header {
   background-color: #fff;
   width: 100%;
   height: auto;
   display: block;
-
 }
 .viewport-sm .primary-header {
   padding: 10px 0;
 }
-.header-menu-wrap {
-  margin-left: auto;
 
-}
 .sticky-header {
   width: 100%;
   position: fixed;
@@ -411,7 +411,6 @@ button {
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 
 .mobile-menu-icon {
@@ -489,7 +488,7 @@ button {
   -webkit-font-smoothing: antialiased;
 }
 .header-menu-wrap ul li:hover > a {
- color: #6c342c;
+  color: #6c342c;
 }
 .header-menu-wrap li ul {
   background-color: #fff;
@@ -519,7 +518,6 @@ button {
   margin-bottom: 5px;
   text-align: left;
   position: relative;
-
 }
 .header-menu-wrap li li:last-child {
   margin: 0;
@@ -641,19 +639,27 @@ button {
 }
 @media (max-width: 580px) {
   .header-right a.menu-btn {
-    line-height: 40px;
-    font-size: 10px;
-    padding: 0 25px;
+    display: flex;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5em;
   }
-  .primary-header .header-logo {
-    max-width: 150px;
+
+  .menu-left .header-text {
+    font-size: 1.3em;
+    display: flex;
+    font-weight: bolder;
+    text-align: left;
+    line-height: 20px;
+    margin-left: 10px;
   }
 }
 .primary-header-inner .header-right {
   display: flex;
   align-items: center;
-  line-height: 80px;
-  margin-left: 20px;
+  line-height: 60px;
+  margin-left: 15px;
 }
 .header-right .mobile-menu-icon {
   margin-left: 20px;
@@ -662,11 +668,12 @@ button {
   background-color: #6c342c;
   line-height: 40px;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 5px;
   margin: 0 auto;
-  display: flex;
+  display: inline;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 15px;
+
 }
 .header-right a.menu-btn:hover {
   background-color: #6c342c;
@@ -676,11 +683,26 @@ button {
 .primary-header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   position: relative;
+  justify-content: space-between;
+}
+.menu-left {
+  display: flex;
+  justify-content: space-around;
+}
+.menu-right {
+  display: flex;
+  justify-content: space-around;
+}
+.header-text {
+  font-size: 1.3em;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 45px;
+  margin-left: 10px;
 }
 .primary-header .header-logo {
-  max-width: 180px;
+  max-width: 45px;
 }
 .viewport-lg .primary-header .header-menu-wrap {
   display: block !important;
@@ -2015,12 +2037,12 @@ blockquote span {
   border-bottom: 1px solid #333;
 }
 .widget-content {
-  color:#fff;
+  color: #fff;
   font-weight: lighter;
   letter-spacing: 2px;
 }
-.mailId{
-    color:#fff;
+.mailId {
+  color: #fff;
   font-weight: lighter;
   letter-spacing: 2px;
 }
@@ -2042,8 +2064,6 @@ blockquote span {
 .widget-content .widget-links li a {
   color: #eeeeee;
   line-height: 1.9;
-
-
 }
 .widget-content .widget-links li a:hover {
   color: #fff;
@@ -2051,8 +2071,6 @@ blockquote span {
   background-color: floralwhite;
   color: #6c342c;
   border-radius: 5px;
-
-
 }
 .subscribe-form {
   position: relative;
@@ -2064,7 +2082,7 @@ blockquote span {
   padding: 10px;
   padding-right: 140px;
 
-    border-radius: 5px;
+  border-radius: 5px;
 }
 .subscribe-form .submit-btn {
   background-color: #6c342c;
@@ -2101,7 +2119,7 @@ blockquote span {
 
   margin: 0;
 }
-.copyRight{
+.copyRight {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
@@ -2130,8 +2148,6 @@ blockquote span {
   opacity: 0.8;
 }
 /* test */
-
-
 
 /*******************************/
 /********* Footer CSS **********/
@@ -2168,7 +2184,6 @@ blockquote span {
   left: 0;
   bottom: 0;
   background: #ffffff;
-
 }
 
 .footer .footer-link a {
@@ -2212,7 +2227,6 @@ blockquote span {
   transition: 0.3s;
 }
 
-
 .footer .footer-social a i {
   font-size: 15px;
   color: #ffffff;
@@ -2222,7 +2236,6 @@ blockquote span {
   background: #6d3129;
   border-color: #6d3129;
   color: whitesmoke;
-
 }
 
 .footer .footer-social a:hover i {
@@ -2260,7 +2273,7 @@ blockquote span {
 .footer .newsletter .btn:hover {
   color: whitesmoke;
   background: #6d3129;
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
 
 .footer .footer-menu .f-menu {
@@ -2304,7 +2317,7 @@ blockquote span {
 }
 
 .footer .copyright p a {
-  color:whitesmoke;
+  color: whitesmoke;
   font-weight: 200;
   letter-spacing: 1px;
 }
