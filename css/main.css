@@ -1,4 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro|Poppins:600,700|Work+Sans:600&amp;display=swap";
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 * {
   padding: 0;
   margin: 0;
